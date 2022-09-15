@@ -1,12 +1,8 @@
-﻿using System.Runtime.CompilerServices;
-using System;
-string fullName = "Kevin";
-string location = "Rexburg";
+﻿Console.Write("Enter your name: ");
+string name = Console.ReadLine();
 
-Console.WriteLine($"My name is {fullName}. I'm from {location}");
+Console.Write("Enter your location: ");
+string location = Console.ReadLine();
 
-string currentDate = DateTime.Now.ToString("yyyy-MM-dd");
-Console.WriteLine(currentDate);
-
-int date = DateTime.Now.DayOfYear;
-Console.WriteLine($"The number of days until Christmas is {360 - date}");
+Console.WriteLine($"My name is {name} and I'm from {location}");
+Console.WriteLine("My name is {0} and I'm from {1}", name, location);
